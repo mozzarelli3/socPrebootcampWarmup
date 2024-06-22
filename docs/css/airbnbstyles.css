@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+  border-radius: 30px;
+  border-bottom: 4px solid #ff5733;
+}
+
+a {
+  text-decoration: none;
+  color: #444444;
+  font-weight: bold;
+}
+
+a:hover {
+  color: black;
+}
+
+/* Search bar */
+
+.search-bar-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+  height: 100px; /* Full viewport height for demonstration */ 
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 50px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 500px; 
+  max-width: 90%;
+  background-color: #ffffff; 
+}
+
+.search-bar input[type="text"] {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  background-color: transparent; /* Match the background color of the container */
+}
+
+
+/* Search text container */
+.search-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-text h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-text p {
+  font-size: 14px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.search-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+
+
+/* Sliding icons bar */
+
+.filter-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; 
+  height: 100vh; 
+  text-align: center;
+  overflow-x: auto; 
+}
+
+.icon {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  margin-bottom: 20px;  
+}
+
+.icon img {
+  width: 35px;
+  height: 35px;
+}
+
+.icon-font {
+  font-size: 15px;
+}
