@@ -168,6 +168,11 @@ main {
   justify-content: center;
 }
 
+.insideout, .purple-rain, .kevin-hart, .doja-cat, .olympics {
+  position: relative;
+  display: inline-block;
+}
+
 .content-img {
   width: 100%;
   max-width: 600px;
@@ -176,6 +181,16 @@ main {
   overflow: hidden;
   object-fit: cover;
 
+}
+
+.content-icon {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50px;
 }
 
 .image-caption {
@@ -219,9 +234,8 @@ main {
 
 .navbar {
   border-bottom: 1px solid #e2e2e2;
-  padding-left: 20px;
+  padding-left: 20x;
   padding-right: 20px;
-
 }
 
 .nav-list {
@@ -244,15 +258,6 @@ main {
   color: #000;
 }
 
-.nav-item.active::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100%;
-  height: 2px;
-  background-color: #000; 
-}
 
 /* locations list/grid */
 
@@ -285,9 +290,10 @@ main {
 /* Support, hosting, and airbnb sections - footer */
 
 .support-section, .hosting, .airbnb {
-  max-width: 600px;
+  max-width: 550px;
   margin: 0 auto;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #e2e2e2;
 }
 
@@ -360,11 +366,7 @@ main {
 .legal-bottom a {
   text-decoration: none;
   color: #333;
-  font-size: 14px;
-}
-
-.legal-bottom a:hover {
-  text-decoration: underline;
+  font-size: 13px;
 }
 
 .globe-icon {
